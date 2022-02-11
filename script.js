@@ -7,7 +7,7 @@ function grid(n) {
         const quotient = n / 16;
         const div = document.createElement("div");
         const width = 3 / quotient;
-        const height = 5 / quotient;
+        const height = 5.8 / quotient;
         div.setAttribute('id', 'square');
         div.style.backgroundColor = 'black';
         div.style.width = width + 'vw';
