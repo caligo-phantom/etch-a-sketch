@@ -9,7 +9,7 @@ function grid(n) {
         const width = 3 / quotient;
         const height = 5.8 / quotient;
         div.setAttribute('id', 'square');
-        div.style.backgroundColor = 'black';
+        div.style.backgroundColor = 'grey';
         div.style.width = width + 'vw';
         div.style.height = height + 'vh';
         div.style.float = 'left';
@@ -18,12 +18,15 @@ function grid(n) {
     body.append(container);
     
     container.addEventListener("mouseover", function( event ) {
-        event.target.style.backgroundColor = "red";
+        event.target.style.backgroundColor = "black";
     });
 }
 
 function numOfSquares(){
     const numOfSquares = prompt("Enter no. of squares per side for new grid: ");
+    while (container.firstChild) {
+        container.removeChild(container.lastChild);
+    }
     if(numOfSquares >= 100) {
         alert("Enter a value below 100");
     }
@@ -33,5 +36,7 @@ function numOfSquares(){
 } 
 
 function def() {
-    window.location.reload();
+    grid(16);
 }
+
+def();
