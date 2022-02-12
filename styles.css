@@ -1,5 +1,8 @@
-.button {
-    margin-left: 20vw;
-    margin-bottom: 0.5rem;
-    margin-right: 0rem;
+.container {
+    width: 48.08rem;
+    align-items: center;
+    margin-top: -15px;
+}
+.translate-middle {
+    margin-top: 1.25rem;
 }

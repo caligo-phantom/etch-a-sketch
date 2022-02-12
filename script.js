@@ -1,24 +1,23 @@
 const body = document.body;
 const container = document.createElement("div");
-container.style.width = '48vw';
+container.setAttribute('class', 'container');
 
 function grid(n) {
     for(let i = 0; i < (n * n); i++) {
         const quotient = n / 16;
         const div = document.createElement("div");
-        const width = 3 / quotient;
-        const height = 5.8 / quotient;
-        div.setAttribute('id', 'square');
-        div.style.backgroundColor = 'grey';
-        div.style.width = width + 'vw';
-        div.style.height = height + 'vh';
+        const width = 2.88 / quotient;
+        const height = 2.704 / quotient;
+        div.style.backgroundColor = 'black';
+        div.style.width = width + 'rem';
+        div.style.height = height + 'rem';
         div.style.float = 'left';
         container.append(div);
     }
     body.append(container);
     
     container.addEventListener("mouseover", function( event ) {
-        event.target.style.backgroundColor = "black";
+        event.target.style.backgroundColor = "red";
     });
 }
 
