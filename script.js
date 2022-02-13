@@ -6,8 +6,8 @@ function grid(n) {
     for(let i = 0; i < (n * n); i++) {
         const quotient = n / 16;
         const div = document.createElement("div");
-        const width = 2.88 / quotient;
-        const height = 2.704 / quotient;
+        const width = 2.16 / quotient;
+        const height = 2.028 / quotient;
         div.style.backgroundColor = 'black';
         div.style.width = width + 'rem';
         div.style.height = height + 'rem';
