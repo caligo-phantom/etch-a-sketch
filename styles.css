@@ -1,8 +1,13 @@
+body {
+    background-color: yellow;
+}
+
 .container {
     width: 36.06rem;
     align-items: center;
-    margin-top: 1.25rem;
+    margin-top: 3rem;
 }
+
 .translate-middle {
-    margin-top: 2rem;
+    margin-top: 5rem;
 }
