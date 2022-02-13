@@ -8,17 +8,13 @@ function grid(n) {
         const div = document.createElement("div");
         const width = 2.16 / quotient;
         const height = 2.028 / quotient;
-        div.style.backgroundColor = 'black';
+        div.style.backgroundColor = 'white';
         div.style.width = width + 'rem';
         div.style.height = height + 'rem';
         div.style.float = 'left';
         container.append(div);
     }
     body.append(container);
-    
-    container.addEventListener("mouseover", function( event ) {
-        event.target.style.backgroundColor = "red";
-    });
 }
 
 function numOfSquares(){
@@ -37,5 +33,22 @@ function numOfSquares(){
 function def() {
     grid(16);
 }
+
+function black() {
+    container.addEventListener("mouseover", function( event ) {
+        event.target.style.backgroundColor = "black";
+    });
+}
+
+function rgb() {
+    container.addEventListener("mouseover", function( event ) {
+        let Rnum = Math.floor(Math.random() * 255);
+        let Gnum = Math.floor(Math.random() * 255);
+        let Bnum = Math.floor(Math.random() * 255);
+        event.target.style.backgroundColor = `rgb(${Rnum}, ${Gnum}, ${Bnum})`;
+    });
+}
+
+black();
 
 def();
