@@ -1,3 +1,3 @@
-﻿# Etch-a-Sketch
-<br>by Siddharth Mittal
-<br>Hosted Link: https://caligo-phantom.github.io/Etch-a-Sketch/
+# Etch a Sketch
+Made with :heart: by Siddharth Mittal <br>
+Hosted @ https://caligo-phantom.github.io/etch-a-sketch/
